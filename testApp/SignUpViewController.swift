@@ -16,13 +16,16 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var coPassword: UITextField!
     
-    var ref : FIRDatabaseReference!
+    var reference : FIRDatabaseReference!
+    
+    
+
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       ref = FIRDatabase.database().reference()
+       reference = FIRDatabase.database().reference()
     }
 
     @IBAction func signUpBtn(_ sender: Any) {
@@ -35,22 +38,31 @@ class SignUpViewController: UIViewController {
                 if let error = error{
                     print(error.localizedDescription)
                 }
-               
+                
                 if let user = user{
                     
-                    let userInfo : [String : Any] = ["uid" : user.uid, "full name" : self.name.text!, "email" : self.email.text!]
+                    let date = Date()
+                    let callendar = Calendar.current
                     
-                    self.ref.child("users").child(user.uid).setValue(userInfo)
+                    let day = callendar.component(.day, from: date)
+                    let month = callendar.component(.month, from: date)
+                    let year = callendar.component(.year, from: date)
+                    let hour = callendar.component(.hour, from: date)
+                    let minute = callendar.component(.minute, from: date)
                     
-                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "VC")
+                    let time : String = "0\(day).0\(month).\(year) at \(hour):\(minute)"
+                    
+                    let userInfo = ["id" : user.uid, "full name" : self.name.text!, "email" : self.email.text!, "time" : time]
+                    
+                    self.reference.child("user").child(user.uid).setValue(userInfo)
+                    
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "usersVC")
                     self.present(vc, animated: true, completion: nil)
                 }
             })
-            
-        } else {
-            print("Password not matched")
         }
-    }
-  
+        
+        
+       }
 
 }

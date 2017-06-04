@@ -15,10 +15,9 @@
 		DF06722D1EE199E300AD8964 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF06722C1EE199E300AD8964 /* GoogleService-Info.plist */; };
 		DF06722F1EE1AB1800AD8964 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF06722E1EE1AB1800AD8964 /* LogInViewController.swift */; };
 		DF0672311EE1ACE600AD8964 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0672301EE1ACE600AD8964 /* SignUpViewController.swift */; };
-		DF0672331EE1AF6500AD8964 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0672321EE1AF6500AD8964 /* UsersTableViewController.swift */; };
-		DF0672371EE1B09200AD8964 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0672361EE1B09200AD8964 /* Users.swift */; };
-		DF0672391EE1BC5F00AD8964 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0672381EE1BC5F00AD8964 /* UsersViewController.swift */; };
-		DF06723B1EE1BC9200AD8964 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF06723A1EE1BC9200AD8964 /* TableViewCell.swift */; };
+		DF171ADD1EE4A03900E5A0B7 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF171ADC1EE4A03900E5A0B7 /* UsersViewController.swift */; };
+		DF171ADF1EE4A08100E5A0B7 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF171ADE1EE4A08100E5A0B7 /* UserTableViewCell.swift */; };
+		DF171AE11EE4A14300E5A0B7 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF171AE01EE4A14300E5A0B7 /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +33,9 @@
 		DF06722C1EE199E300AD8964 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF06722E1EE1AB1800AD8964 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		DF0672301EE1ACE600AD8964 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		DF0672321EE1AF6500AD8964 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
-		DF0672361EE1B09200AD8964 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
-		DF0672381EE1BC5F00AD8964 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
-		DF06723A1EE1BC9200AD8964 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DF171ADC1EE4A03900E5A0B7 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		DF171ADE1EE4A08100E5A0B7 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		DF171AE01EE4A14300E5A0B7 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +96,9 @@
 				DF0672261EE1998C00AD8964 /* Info.plist */,
 				DF06722E1EE1AB1800AD8964 /* LogInViewController.swift */,
 				DF0672301EE1ACE600AD8964 /* SignUpViewController.swift */,
-				DF0672321EE1AF6500AD8964 /* UsersTableViewController.swift */,
-				DF0672361EE1B09200AD8964 /* Users.swift */,
-				DF0672381EE1BC5F00AD8964 /* UsersViewController.swift */,
-				DF06723A1EE1BC9200AD8964 /* TableViewCell.swift */,
+				DF171ADC1EE4A03900E5A0B7 /* UsersViewController.swift */,
+				DF171ADE1EE4A08100E5A0B7 /* UserTableViewCell.swift */,
+				DF171AE01EE4A14300E5A0B7 /* Users.swift */,
 			);
 			path = testApp;
 			sourceTree = "<group>";
@@ -232,12 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0672311EE1ACE600AD8964 /* SignUpViewController.swift in Sources */,
-				DF0672391EE1BC5F00AD8964 /* UsersViewController.swift in Sources */,
+				DF171ADD1EE4A03900E5A0B7 /* UsersViewController.swift in Sources */,
 				DF06722F1EE1AB1800AD8964 /* LogInViewController.swift in Sources */,
-				DF0672331EE1AF6500AD8964 /* UsersTableViewController.swift in Sources */,
-				DF0672371EE1B09200AD8964 /* Users.swift in Sources */,
-				DF06723B1EE1BC9200AD8964 /* TableViewCell.swift in Sources */,
 				DF06721B1EE1998C00AD8964 /* AppDelegate.swift in Sources */,
+				DF171AE11EE4A14300E5A0B7 /* Users.swift in Sources */,
+				DF171ADF1EE4A08100E5A0B7 /* UserTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
